@@ -226,7 +226,7 @@ function App() {
             )}
             {(currentStep === 6) && (
               <FormField
-                label="How many days can you workout in a day"
+                label="How many days can you workout"
                 name="number_of_days"
                 value={workoutDetails.number_of_days}
                 onChange={handleChange}
