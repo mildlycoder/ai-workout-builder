@@ -9,6 +9,11 @@ const port = 3000;
 app.use(cors())
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.status(200).json('Welcome, your app is working well');
+})
+
+
 app.post('/generate-workout', async (req, res) => {
   try {
     const apiUrl = 'https://api.getknit.ai/v1/router/run';
