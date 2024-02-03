@@ -101,6 +101,7 @@ function App() {
       const response = await fetch('https://ai-workout-builder-jxym/generate-workout', {
         method: 'POST',
         headers: {
+          'Access-Control-Allow-Origin': '*',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({variables: formattedVariables}),
