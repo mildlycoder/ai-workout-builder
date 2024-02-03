@@ -158,7 +158,6 @@ function App() {
                 <h1 className='text-3xl text-[#084DA6] w-[75%] m-auto text-center mt-5'>
                   Thank you for submitting your workout details!
                 </h1>
-                {/* Display responseData as needed */}
                 <motion.div className="text-[#084DA6] text-left mt-5 w-[90%] md:w-[65%] mx-auto text-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -263,7 +262,7 @@ function App() {
                   Next
                 </motion.button>
               ) : (
-                <motion.button type="submit" whileHover={{ scale: 1.1 }}>
+                <motion.button type="submit" whileHover={{ scale: 1.1 }}   className='bg-[#F2A172] p-3 border-[#BF0A19] border-2 m-5 px-4 py-2 rounded-md'>
                   Submit
                 </motion.button>
               )}
