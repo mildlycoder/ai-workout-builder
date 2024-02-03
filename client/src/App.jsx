@@ -98,7 +98,7 @@ function App() {
         name,
         value,
       }));
-      const response = await fetch('http://localhost:3000/generate-workout', {
+      const response = await fetch('https://ai-workout-builder-gnhp.vercel.app/generate-workout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
