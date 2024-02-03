@@ -98,7 +98,7 @@ function App() {
         name,
         value,
       }));
-      const response = await fetch('https://ai-workout-builder-jxym/generate-workout', {
+      const response = await fetch('https://ai-workout-builder.onrender.com/generate-workout', {
         method: 'POST',
         headers: {
           'Access-Control-Allow-Origin': '*',
